@@ -4,7 +4,7 @@ namespace User;
 class User {
 	private $db;
 
-	public function g($ids) {
+	public function getUsernamesByIds($ids) {
 		$users = [];
 
 		$idList = implode(',', $ids);
