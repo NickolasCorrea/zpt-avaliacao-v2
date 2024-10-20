@@ -59,6 +59,13 @@ INNER JOIN user_department u_d ON u_d.user = user.id
 INNER JOIN department dept ON u_d.department = dept.id
 WHERE user.username = 'zpt'
 ```
+Resposta:
+  ```sql
+  SELECT dept.id FROM user
+  INNER JOIN user_department u_d ON u_d.user = user.id
+  WHERE user.username = 'zpt'
+  ```
+  Tendo em visto que a query retorna o ID do departamento, e o mesmo se encontra na tabela user_department (tabela de ligação), não há necessidade de fazer um JOIN direto com a tabela  departamento pois podemos retornar esse mesmo ID da tabela de ligação.
 
 6) A classe `User` tem o método `setDb()` que recebe uma conexão com o banco de dados. As classes `Company` e `Department` precisam ter esse mesmo método, idêntico. Implemente.
 
