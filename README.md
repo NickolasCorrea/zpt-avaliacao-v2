@@ -43,6 +43,7 @@ CREATE TABLE `user_department` (
 Resposta: Arquivo PNG adicionado na raíz do projeto.
 
 2) O método em [/src/User.php#L7-L15](./src/User.php#L4-L11) está muito lento. Deixe-o mais rápido. Esse método é em pseudocódigo PHP, isto é, não é possível executá-lo de fato. Sua solução pode ser em pseudocódigo também.
+Resposta: O método foi modificado para realizar uma única consulta pela lista de IDs.
 
 3) Ainda referente ao método da questão anterior, melhore o nome dele.
 

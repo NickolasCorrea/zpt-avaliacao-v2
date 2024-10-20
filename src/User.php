@@ -7,9 +7,8 @@ class User {
 	public function g($ids) {
 		$users = [];
 
-		foreach ($ids as $id) {
-			$users[] = $this->db->q('SELECT username FROM user WHERE id = ' . $id);
-		}
+		$idList = implode(',', $ids);
+		$users[] = $this->db->q('SELECT username FROM user WHERE id IN (' . $idList . ')');
 
 		return $users;
 	}
