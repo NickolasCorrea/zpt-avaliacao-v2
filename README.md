@@ -71,6 +71,7 @@ Resposta:
 Resposta: O método setDb() foi transferido para a classe Base.php, que é usada como classe mãe das demais classes que necessitam do método.
 
 7) [Esta função](./src/Utils.php#L4) permite atribuir uma conexão em estilo procedural. Faça a função aceitar instâncias de `Company` e `Department` também.
+Resposta: Função modificada em Utils.php.
 
 8) Utilize a API https://ipinfo.io/json via JavaScript para consultar o IP do usuário e exibir na lacuna designada em [./src/index.html](./src/index.html).
 
