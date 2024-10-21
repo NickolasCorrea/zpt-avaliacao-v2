@@ -80,3 +80,4 @@ Resposta: Composer e pacote IpInfo instalados para conseguir implementar a API n
 Resposta: Classe criada sendo herdeira da `Company`.
 
 10) **Qual commit** introduziu [este erro](./src/Department.php#L10)? Explique e corrija o erro.
+RESPOSTA: O erro foi inserido no commit "feat(department): get ready to allow operations on User from inside Department" (hash: b72835e5be4018e4361427b8b099360ad855f80e). A classe está errada, tanto na declaração de seus atributos, quanto no método construtor que está tentando instanciar um User de maneira equivoca.

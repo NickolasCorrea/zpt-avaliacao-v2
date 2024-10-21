@@ -1,15 +1,36 @@
 <?php
 namespace Department;
 
-use Base\Base;
+require_once 'User.php';
 
-require_once './User.php';
+class Department {
+    private int $id;
+	private string $name;
+	private int $employees;
 
-class Department extends Base {
-	private User\User $user;
+    public function __construct(int $id, string $name = '', int $employees = 0) {
+        $this->id = $id;
+        $this->name = $name; 
+        $this->employees = $employees;
+    }
 
-	public function __construct() {
-		$this->user = new User\User(); // @todo fixme
-	}
+	public function getId(): int {
+        return $this->id;
+    }
+
+    public function getName(): string {
+        return $this->name;
+    }
+
+    public function setName(string $name): void {
+        $this->name = $name;
+    }
+
+    public function getEmployees(): int {
+        return $this->employees;
+    }
+
+    public function setEmployees(int $employees): void {
+        $this->employees = $employees;
+    }
 }
-?>
