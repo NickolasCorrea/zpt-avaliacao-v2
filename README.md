@@ -68,6 +68,7 @@ Resposta:
   Tendo em visto que a query retorna o ID do departamento, e o mesmo se encontra na tabela user_department (tabela de ligação), não há necessidade de fazer um JOIN direto com a tabela  departamento pois podemos retornar esse mesmo ID da tabela de ligação.
 
 6) A classe `User` tem o método `setDb()` que recebe uma conexão com o banco de dados. As classes `Company` e `Department` precisam ter esse mesmo método, idêntico. Implemente.
+Resposta: O método setDb() foi transferido para a classe Base.php, que é usada como classe mãe das demais classes que necessitam do método.
 
 7) [Esta função](./src/Utils.php#L4) permite atribuir uma conexão em estilo procedural. Faça a função aceitar instâncias de `Company` e `Department` também.
 

@@ -1,7 +1,9 @@
 <?php
 namespace Company;
 
-class Company {
+use Base\Base;
+
+class Company extends Base  {
 	private int $id;
 
 	public function __construct($id) {
