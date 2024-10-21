@@ -77,5 +77,6 @@ Resposta: Função modificada em Utils.php
 Resposta: Composer e pacote IpInfo instalados para conseguir implementar a API no projeto, cuja o código se encontra em IpInfo.php. O JavaScript foi utilizado para buscar o IP do usuário localizado pelo PHP e mostrar na tela.
 
 9) Crie a classe `CompanyClient`, que é uma `Company` que, além do `id`, tem um número chamado `registration`. A saudação deve exibir o `id` e o `registration`.
+Resposta: Classe criada sendo herdeira da `Company`.
 
 10) **Qual commit** introduziu [este erro](./src/Department.php#L10)? Explique e corrija o erro.
